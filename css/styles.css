@@ -1,0 +1,15 @@
+.container-fluid {
+  height: 1000px;
+}
+
+.lado-izquierdo {
+  background-color: #335384;
+  height: 1000px;
+}
+
+.lado-derecho {
+  background-color: #ffffff;
+  height: 1000px;
+}
+
+/*# sourceMappingURL=styles.css.map */

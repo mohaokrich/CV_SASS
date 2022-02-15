@@ -1,0 +1,28 @@
+//COLORES DE PAGINA
+
+// colores lado izquierdo del cv
+$color-izquierdo: #335384;
+$color-letra-izquierdo: #ffffff;
+// colores lado derecho del cv
+$color-derecho: #ffffff;
+$color-titulo-derecho: #5ba7d1;
+$color-subtitulo-derecho: #444440;
+$color-informacion:#5d5d58;
+
+//propiedades y tamaños
+$altura: 1000px;
+
+
+//----------------
+.container-fluid{
+    height: $altura ;
+}
+.lado-izquierdo{
+    background-color: $color-izquierdo;
+    height: $altura ;
+}
+.lado-derecho{
+    background-color: $color-derecho;
+    height: $altura ;
+}
+
