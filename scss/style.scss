@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;400&family=Source+Sans+Pro:wght@600&display=swap');
 //COLORES DE PAGINA
-
 // colores lado izquierdo del cv
 $color-izquierdo: #335384;
 $color-letra-izquierdo: #ffffff;
@@ -10,19 +10,96 @@ $color-subtitulo-derecho: #444440;
 $color-informacion:#5d5d58;
 
 //propiedades y tamaños
-$altura: 1000px;
+$altura-pagina: 100%;
+$ancho-pagina: 50%;
 
+//DARK-MODE
+$color-derecho-night: #444440;
+$color-derecho-letra-night: #ffffff;
 
-//----------------
-.container-fluid{
-    height: $altura ;
+.dark-mode{
+    background-color: $color-derecho-night;
+    color: $color-derecho-letra-night;
 }
+
+
+.container{
+    height: $altura-pagina ;
+    width: $ancho-pagina;
+    border: 1px solid black;
+}
+
+
 .lado-izquierdo{
     background-color: $color-izquierdo;
-    height: $altura ;
-}
-.lado-derecho{
-    background-color: $color-derecho;
-    height: $altura ;
+    color: $color-letra-izquierdo;
+    .imagen-cv{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        img{
+            border-radius: 50%;
+        }
+    }
+    .datos-personales{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .col{
+            padding-bottom: 20%;
+        }
+        h6{
+            text-align: center;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        ul{
+            margin-left: 10%;
+            li{
+                font-family: 'Assistant', sans-serif;
+                padding-bottom: 10%;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
 }
 
+
+
+
+.lado-derecho{
+    .col{
+        margin: 7% 7% 12% 7%;
+        h3{
+            color: $color-titulo-derecho;
+        }
+        h4{
+            color: $color-subtitulo-derecho;
+            margin-left: 5%;
+            font-family: 'Assistant', sans-serif;
+        }
+        h5{
+            color: $color-informacion;
+            margin-left: 5%;
+            font-family: 'Assistant', sans-serif;
+        }
+    }
+    .titulo-inicial{
+        h1{
+            color: $color-izquierdo;
+            font-family: 'GlacialIndifferenceBold';
+        }
+        h2{
+            color: $color-titulo-derecho;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        hr{
+           background: black;
+        }
+    } 
+    button{
+        margin-top: 2%;
+        float: right;
+    }
+}

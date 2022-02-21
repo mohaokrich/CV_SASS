@@ -1,15 +1,80 @@
-.container-fluid {
-  height: 1000px;
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;400&family=Source+Sans+Pro:wght@600&display=swap");
+.dark-mode {
+  background-color: #444440;
+  color: #ffffff;
+}
+
+.container {
+  height: 100%;
+  width: 50%;
+  border: 1px solid black;
 }
 
 .lado-izquierdo {
   background-color: #335384;
-  height: 1000px;
+  color: #ffffff;
+}
+.lado-izquierdo .imagen-cv {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.lado-izquierdo .imagen-cv img {
+  border-radius: 50%;
+}
+.lado-izquierdo .datos-personales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lado-izquierdo .datos-personales .col {
+  padding-bottom: 20%;
+}
+.lado-izquierdo .datos-personales h6 {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.lado-izquierdo .datos-personales ul {
+  margin-left: 10%;
+}
+.lado-izquierdo .datos-personales ul li {
+  font-family: "Assistant", sans-serif;
+  padding-bottom: 10%;
+}
+.lado-izquierdo .datos-personales ul li a {
+  text-decoration: none;
+  color: white;
 }
 
-.lado-derecho {
-  background-color: #ffffff;
-  height: 1000px;
+.lado-derecho .col {
+  margin: 7% 7% 12% 7%;
+}
+.lado-derecho .col h3 {
+  color: #5ba7d1;
+}
+.lado-derecho .col h4 {
+  color: #444440;
+  margin-left: 5%;
+  font-family: "Assistant", sans-serif;
+}
+.lado-derecho .col h5 {
+  color: #5d5d58;
+  margin-left: 5%;
+  font-family: "Assistant", sans-serif;
+}
+.lado-derecho .titulo-inicial h1 {
+  color: #335384;
+  font-family: "GlacialIndifferenceBold";
+}
+.lado-derecho .titulo-inicial h2 {
+  color: #5ba7d1;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.lado-derecho .titulo-inicial hr {
+  background: black;
+}
+.lado-derecho button {
+  margin-top: 2%;
+  float: right;
 }
 
 /*# sourceMappingURL=styles.css.map */
