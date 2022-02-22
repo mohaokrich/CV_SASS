@@ -1,23 +1,24 @@
+var click = 0;
 function darkMode() {
-    var leftElement = document.getElementsByClassName("lado-derecho")[0];
-    leftElement.style.color = 'white';
-    leftElement.style.backgroundColor  = '#444440';
-
-    var rightElement = document.getElementsByClassName("lado-izquierdo")[0];
-    rightElement.style.backgroundColor = '#162742';
-
-    document.getElementsByTagName("h1")[0].style.color = "#162742";
-
-    for (let index = 0; index < 6; index++) {
-        var titulos = document.getElementsByTagName("h4")[index];
-        var sutitulos = document.getElementsByTagName("h5")[index];
-        titulos.style.color = "white";
-        sutitulos.style.color ="#D0D0D0"
+    click++;
+    if(click === 1){
+        $('#image-cv').attr('src',"./img/foto-cv2-luz2.png");
+        $(".lado-derecho").css({background:'#444440', color: 'white'});
+        $(".lado-izquierdo").css({background:'#162742'});
+        $("h1").css({color:'#162742'});
+        $("h4").css({color:'white'});
+        $("h5").css({color:'#D0D0D0'}); 
+    }else if(click === 2){   
+        $('#image-cv').attr('src',"./img/foto-cv2.jpeg");
+        $(".lado-derecho").css({background:"", color: ""});
+        $(".lado-izquierdo").css({background:''});
+        $("h1").css({color:''});
+        $("h4").css({color:''});
+        $("h5").css({color:''}); 
+        click = 0;
     }
-    contador = 0;
-    
 }
-function darkMode2() {
+function dilexicMode() {
     var element = document.getElementsByClassName("lado-derecho")[0];
     element.classList.toggle("dark-mode");
   }
